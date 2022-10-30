@@ -3,6 +3,60 @@
 @import 'reset';
 @import 'global';
 
+.header{
+	padding: 40px 0;
+&__inner{
+	display: flex;
+	justify-content: space-between;
+}
 
+}
+.menu{
+&__list{
+	display: flex;
+}
+&__list-item + &__list-item{  
+margin-left: 35px;
+}
+&__list-link{
+	color: $title;
+	padding-bottom: 2px;
+   transition: all .5s;
+	@extend %quicksand-400;
+	&:hover{
+		color: $accent;
+		border-bottom: 1px solid $accent;
+		@extend %quicksand-500;
+	}
+}
+&__list-link--active{
+	color: $accent;
+	border-bottom: 1px solid $accent;
+	@extend %quicksand-500;
+}
+}
+
+.user-nav{
+	display: flex;
+	&__link{
+		position: relative;
+	}
+	&__link + &__link{
+      margin-left: 25px;
+	}
+	&__num{
+		font-size: 12px;
+		color: #fff;
+		text-align: center;
+		line-height: 20px;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: $accent;
+		top: -9px;
+		right: -12px;
+	}
+}
 
 @import 'media';
