@@ -280,6 +280,7 @@
     "yargs-parser": "^5.0.1"
   },
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
@@ -289,6 +290,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^3.0.0",
     "jquery": "^3.6.1",
+    "rateyo": "^2.3.2",
     "sass": "^1.55.0",
     "slick-carousel": "^1.8.1"
   },
